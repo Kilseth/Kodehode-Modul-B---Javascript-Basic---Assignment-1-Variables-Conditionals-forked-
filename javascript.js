@@ -20,7 +20,11 @@ String, number, boolean, array
 You can choose what the actual content is.
 Try to use both the let and const keywords */
 
+const w = "white";
+let b = "blue";
 
+const flatWorld = false;
+const hobbyArray = [Gaming, Anime, Manga, Karaoke];
 
 /* ASSIGNMENT 3
 
