@@ -52,10 +52,12 @@ let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
-if (userAge <= 18 && !userIsBlocked) {
+if (userName && userAge <= 18 && !userIsBlocked) {
   userIsLoggedIn;
+  goToPage = "/Home";
   console.log("Welcome user");
 } else {
+  !userIsLoggedIn;
   console.log("ERROR: Unable to log in");
 }
 
