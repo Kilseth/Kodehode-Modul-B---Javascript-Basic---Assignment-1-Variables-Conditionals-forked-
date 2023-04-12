@@ -91,6 +91,6 @@ const userMale = false;
 
 const userTitle = userMale ? "Mr. if true" : "Mrs. if not true";
 
-console.log((userTitle = true));
+const userMaleToggle = true;
 
 console.log(userTitle);
