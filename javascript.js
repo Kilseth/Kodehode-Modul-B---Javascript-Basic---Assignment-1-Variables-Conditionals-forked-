@@ -24,7 +24,7 @@ const w = "white";
 let b = "blue";
 
 const flatWorld = false;
-const hobbyArray = [Gaming, Anime, Manga, Karaoke];
+const hobbyArray = ["Gaming", "Anime", "Manga", "Karaoke"];
 
 /* ASSIGNMENT 3
 
@@ -47,12 +47,12 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly */
 
 const userName = "Tom";
-const userAge = 18;
+const userAge = 17;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
-if (userName && userAge <= 18 && !userIsBlocked) {
+if (userName && userAge >= 18 && !userIsBlocked) {
   userIsLoggedIn;
   goToPage = "/Home";
   console.log("Welcome user");
