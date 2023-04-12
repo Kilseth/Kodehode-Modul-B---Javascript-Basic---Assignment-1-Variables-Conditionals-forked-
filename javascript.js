@@ -31,6 +31,14 @@ const hobbyArray = ["Gaming", "Anime", "Manga", "Karaoke"];
 Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=) */
 
+const x = 736;
+let g = "Gotta";
+const move = " keep moving";
+
+console.log(x);
+
+console.log((g += move));
+
 /* ASSIGNMENT 4
 
 Write an IF/ELSE conditional statement that checks whether username is empty, 
