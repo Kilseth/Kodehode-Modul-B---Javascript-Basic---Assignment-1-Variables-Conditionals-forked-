@@ -12,6 +12,9 @@ Your first task will be to link this javascript file to the index.html file
 using one of the methods I showed in the first lecture.
 <-- Locate the index.html file in the file browser and link it to this file, javascript.js */
 
+//log for clarity under code refresh
+console.log("--Fresh--");
+
 /* ASSIGNMENT 2
 
 Last lecture I showed you how to make variables that can hold values of the various data types.
@@ -31,13 +34,16 @@ const hobbyArray = ["Gaming", "Anime", "Manga", "Karaoke"];
 Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=) */
 
-const x = 736;
+let x = 736;
 let g = "Gotta";
+const y = x--;
 const move = " keep moving";
 
 console.log(x);
 
 console.log((g += move));
+
+console.log((x += y) / 3.14);
 
 /* ASSIGNMENT 4
 
@@ -55,7 +61,7 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly */
 
 const userName = "Tom";
-const userAge = 17;
+const userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
@@ -63,7 +69,7 @@ let goToPage = "";
 if (userName && userAge >= 18 && !userIsBlocked) {
   userIsLoggedIn;
   goToPage = "/Home";
-  console.log("Welcome user");
+  console.log("Welcome " + goToPage + " user");
 } else {
   !userIsLoggedIn;
   console.log("ERROR: Unable to log in");
@@ -82,3 +88,9 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 */
 const userMale = false;
+
+const userTitle = userMale ? "Mr. if true" : "Mrs. if not true";
+
+console.log((userTitle = true));
+
+console.log(userTitle);
