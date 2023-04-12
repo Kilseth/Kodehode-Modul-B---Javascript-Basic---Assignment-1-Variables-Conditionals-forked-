@@ -52,7 +52,14 @@ let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
-/* ASSIGNMENT 5
+if (userAge <= 18 && !userIsBlocked) {
+  userIsLoggedIn;
+  console.log("Welcome user");
+} else {
+  console.log("ERROR: Unable to log in");
+}
+
+/* ASSIGNMENT 5 
 
 (NOTE: We didn't get around to cover this today (11.04), but we will cover this on thursday)
 
