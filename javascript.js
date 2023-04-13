@@ -87,10 +87,8 @@ const variable = statement ? "this if true" : "this if not true"
 Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 */
-const userMale = false;
+const userMale = true;
 
 const userTitle = userMale ? "Mr. " : "Mrs. ";
-
-const userMaleToggle = true;
 
 console.log(userTitle);
