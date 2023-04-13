@@ -12,8 +12,8 @@ Your first task will be to link this javascript file to the index.html file
 using one of the methods I showed in the first lecture.
 <-- Locate the index.html file in the file browser and link it to this file, javascript.js */
 
-//log for clarity under code refresh
-console.log("--Fresh--");
+//log for clarity under development code refresh
+//console.log("--Fresh--");
 
 /* ASSIGNMENT 2
 
@@ -63,7 +63,7 @@ can handle all cases correctly */
 const userName = "Tom";
 const userAge = 18;
 let userIsLoggedIn = false;
-let userIsBlocked = false;
+let userIsBlocked = true;
 let goToPage = "";
 
 if (userName && userAge >= 18 && !userIsBlocked) {
