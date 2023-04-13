@@ -89,7 +89,7 @@ to see that your conditional is working.
 */
 const userMale = false;
 
-const userTitle = userMale ? "Mr. if true" : "Mrs. if not true";
+let userTitle = userMale ? "Mr. " : "Mrs. ";
 
 const userMaleToggle = true;
 
