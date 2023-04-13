@@ -132,6 +132,9 @@ Your first task will be to link this javascript file to the index.html file
 using one of the methods I showed in the first lecture.
 <-- Locate the index.html file in the file browser and link it to this file, javascript.js */
 
+//log for clarity under development code refresh
+//console.log("--Fresh--");
+
 /* ASSIGNMENT 2
 
 Last lecture I showed you how to make variables that can hold values of the various data types.
@@ -140,10 +143,23 @@ String, number, boolean, array
 You can choose what the actual content is.
 Try to use both the let and const keywords */
 
+var w = "white";
+var b = "blue";
+var flatWorld = false;
+var hobbyArray = ["Gaming", "Anime", "Manga", "Karaoke"];
+
 /* ASSIGNMENT 3
 
 Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=) */
+
+var x = 736;
+var g = "Gotta";
+var y = x--;
+var move = " keep moving";
+console.log(x);
+console.log(g += move);
+console.log((x += y) / 3.14);
 
 /* ASSIGNMENT 4
 
@@ -163,10 +179,18 @@ can handle all cases correctly */
 var userName = "Tom";
 var userAge = 18;
 var userIsLoggedIn = false;
-var userIsBlocked = false;
+var userIsBlocked = true;
 var goToPage = "";
+if (userName && userAge >= 18 && !userIsBlocked) {
+  userIsLoggedIn;
+  goToPage = "/Home";
+  console.log("Welcome " + goToPage + " user");
+} else {
+  !userIsLoggedIn;
+  console.log("ERROR: Unable to log in");
+}
 
-/* ASSIGNMENT 5
+/* ASSIGNMENT 5 
 
 (NOTE: We didn't get around to cover this today (11.04), but we will cover this on thursday)
 
@@ -178,7 +202,9 @@ const variable = statement ? "this if true" : "this if not true"
 Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 */
-var userMale = false;
+var userMale = true;
+var userTitle = userMale ? "Mr. " : "Mrs. ";
+console.log(userTitle);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -204,7 +230,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36533" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33089" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
